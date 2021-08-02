@@ -3,7 +3,7 @@ version: '3'
 services:
   python-django:
     build: .
-    container_name: 'project2021-sc'
+    container_name: 'python-django'
     stdin_open: true
     tty: true
     volumes:
