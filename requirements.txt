@@ -1,5 +1,4 @@
 Django==3.2.5
 numpy
-opencv-python
 DateTime
 requests
