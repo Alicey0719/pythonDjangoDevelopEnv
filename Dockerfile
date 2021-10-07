@@ -3,7 +3,6 @@ ENV PYTHONUUNBUFFERED 1
 RUN mkdir /code
 WORKDIR /code
 COPY requirements.txt /code/
-RUN apt update
-RUN apt install -y sqlite3 vim less net-tools mtr git
+RUN apt update && apt install -y sqlite3 vim less net-tools mtr git
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
